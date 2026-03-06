@@ -1,4 +1,4 @@
-// frontend/src/pages/AttendancePage.jsx
+
 import { useEffect, useMemo, useState } from "react";
 import { fetchEmployees } from "../api/employees";
 import {
@@ -83,12 +83,11 @@ export default function AttendancePage() {
 
   useEffect(() => {
     loadEmployees();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     loadAttendance(employeeId);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, [employeeId]);
 
   async function onMark(e) {
