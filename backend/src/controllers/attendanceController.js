@@ -12,7 +12,7 @@ const markAttendance = asyncHandler(async (req, res) => {
     throw new Error("Employee not found");
   }
 
-  // Upsert behavior: if record exists for same date, update it; else create new
+  
   const saved = await Attendance.findOneAndUpdate(
     { employeeId, date },
     { $set: { status } },

@@ -1,4 +1,3 @@
-
 import { useEffect, useMemo, useState } from "react";
 import { fetchEmployees } from "../api/employees";
 import {
@@ -150,6 +149,8 @@ export default function AttendancePage() {
                 className={inputClass}
                 type="date"
                 value={date}
+                min="1900-01-01"
+                max="2100-12-31"
                 onChange={(e) => setDate(e.target.value)}
               />
             </Field>
