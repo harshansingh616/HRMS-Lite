@@ -133,7 +133,7 @@ export default function EmployeesPage() {
         <div className="flex items-center justify-between">
           <div className="text-lg font-semibold text-slate-900">Employees</div>
           <button
-            className="text-sm px-3 py-2 rounded-xl border hover:bg-slate-50"
+            className="rounded-xl bg-slate-900 text-white px-4 py-2 text-sm font-semibold disabled:opacity-60"
             onClick={load}
             disabled={loading || busy}
           >
@@ -167,7 +167,7 @@ export default function EmployeesPage() {
                       <button
                         onClick={() => onDelete(e.employeeId)}
                         disabled={busy}
-                        className="px-3 py-1.5 rounded-xl border hover:bg-slate-50 disabled:opacity-60 text-white"
+                        className="rounded-xl bg-slate-900 text-white px-4 py-2 text-sm font-semibold disabled:opacity-60"
                       >
                         Delete
                       </button>
