@@ -63,6 +63,5 @@ Built as a simple internal admin tool with a clean UI and REST APIs.
 ### Prerequisites
 - Node.js (LTS recommended)
 - MongoDB Atlas account (or local MongoDB)
-- Git
 
 ---
